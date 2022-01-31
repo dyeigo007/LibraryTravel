@@ -1,10 +1,12 @@
 ﻿using BrowserTravel.LibraryTravel.Core.Entities;
 using BrowserTravel.LibraryTravel.Core.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace BrowserTravel.LibraryTravel.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EditorialController : ControllerBase
